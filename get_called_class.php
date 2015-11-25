@@ -1,36 +1,36 @@
 <?php
 
-if(!function_exists('get_called_class'))
+if (!function_exists('get_called_class'))
 {
-	class _class_tools
+    class _class_tools
     {
-		static $i  = 0;
-		static $fl = null;
+        private static $i  = 0;
+        private static $fl = null;
 
-		public static function _get_called_class()
+        public static function _get_called_class()
         {
-		    $bt = debug_backtrace();
+            $bt = debug_backtrace();
 
-			if (self::$fl == $bt[2]['file'].$bt[2]['line'])
+            if (self::$fl == $bt[2]['file'].$bt[2]['line'])
             {
-			    self::$i++;
-			}
+                self::$i++;
+            }
             else
             {
-			    self::$i  = 0;
-			    self::$fl = $bt[2]['file'].$bt[2]['line'];
-			}
+                self::$i  = 0;
+                self::$fl = $bt[2]['file'].$bt[2]['line'];
+            }
 
-			$lines = file($bt[2]['file']);
+            $lines = file($bt[2]['file']);
 
-			preg_match_all('/([a-zA-Z0-9\_]+)::'.$bt[2]['function'].'/', $lines[$bt[2]['line']-1], $matches);
+            preg_match_all('/([a-zA-Z0-9\_]+)::'.$bt[2]['function'].'/', $lines[$bt[2]['line']-1], $matches);
 
-	        return $matches[1][self::$i];
-	    }
-	}
+            return $matches[1][self::$i];
+        }
+    }
 
-	function get_called_class()
+    function get_called_class()
     {
-	    return _class_tools::_get_called_class();
-	}
+        return _class_tools::_get_called_class();
+    }
 }
