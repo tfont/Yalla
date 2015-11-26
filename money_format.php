@@ -34,7 +34,6 @@ if (!function_exists('money_format'))
                 'n_sign_posn'       => 1,
                 'grouping'          => array(),
                 'mon_grouping'      => array(0 => 3, 1 => 3)
-
             );
         }
 
