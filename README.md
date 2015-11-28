@@ -6,4 +6,4 @@
 - [http_response_code()](http_response_code.php) (5.4.0+)
 - [money_format()](money_format.php) (WIN OS)
 
-Compiled by, Travis van der Font  ([@tfont](https://twitter.com/tfont)).
+Compiled by, Travis van der Font  ([@travisfont](https://twitter.com/travisfont)).
