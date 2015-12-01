@@ -107,18 +107,18 @@ if (!function_exists('money_format'))
 
             if ($left > 0 && $left > $n)
             {
-                $value[0] = str_repeat($flags['fillchar'], $left - $n) . $value[0];
+                $value[0] = str_repeat($flags['fillchar'], $left - $n).$value[0];
             }
 
             $value = implode($locale['mon_decimal_point'], $value);
 
             if ($locale["{$letter}_cs_precedes"])
             {
-                $value = $prefix . $currency . $space . $value . $suffix;
+                $value = $prefix.$currency.$space.$value.$suffix;
             }
             else
             {
-                $value = $prefix . $value . $space . $currency . $suffix;
+                $value = $prefix.$value.$space.$currency.$suffix;
             }
 
             if ($width > 0)
