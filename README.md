@@ -7,5 +7,7 @@
 - [mb_detect_encoding()](mb_detect_encoding.php) (4.0.6+)
 - [money_format()](money_format.php) (WIN OS)
 - [str_split()](str_split.php) (5+)
+- [utf8_encode()](utf8_encode.php) (4+)
+- [utf8_decode()](utf8_decode.php) (4+)
 
 Compiled by, Travis van der Font  ([@travisfont](https://twitter.com/travisfont)).
