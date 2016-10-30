@@ -2,10 +2,10 @@
 
 if (!function_exists('get_called_class'))
 {
-    class _class_tools
+    final class _class_tools
     {
         private static $i  = 0;
-        private static $fl = null;
+        private static $fl = NULL;
 
         public static function _get_called_class()
         {
@@ -25,12 +25,12 @@ if (!function_exists('get_called_class'))
 
             preg_match_all('/([a-zA-Z0-9\_]+)::'.$bt[2]['function'].'/', $lines[$bt[2]['line']-1], $matches);
 
-            return $matches[1][self::$i];
+            return (string) $matches[1][self::$i];
         }
     }
 
     function get_called_class()
     {
-        return _class_tools::_get_called_class();
+        return (string) _class_tools::_get_called_class();
     }
 }
