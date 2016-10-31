@@ -6,6 +6,7 @@
 - [boolval()](boolval.php) (5.5.0+)
 - [class_uses()](class_uses.php) (5.4.0+)
 - [get_called_class()](get_called_class.php) (5.3.0+)
+- [hash_pbkdf2()](hash_pbkdf2.php) (5.5.0+)
 - [hex2bin()](hex2bin.php) (5.4.0+)
 - [hash_equals()](hash_equals.php) (5.6.0+)
 - [http_response_code()](http_response_code.php) (5.4.0+)
