@@ -23,6 +23,7 @@
 - [utf8_encode()](utf8_encode.php) (4.0+)
 - [utf8_decode()](utf8_decode.php) (4.0+)
 
-
-
 Compiled by, Travis van der Font  ([@travisfont](https://twitter.com/travisfont)).
+
+*External Projects/Libraries:*
+- https://github.com/paragonie/sodium_compat
