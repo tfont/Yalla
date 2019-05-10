@@ -25,5 +25,5 @@
 
 Compiled by, Travis van der Font  ([@travisfont](https://twitter.com/travisfont)).
 
-*External Projects/Libraries:*
+**External Projects/Libraries:**
 - https://github.com/paragonie/sodium_compat
