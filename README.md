@@ -27,3 +27,4 @@ Compiled by, Travis van der Font  ([@travisfont](https://twitter.com/travisfont)
 
 **External Projects/Libraries:**
 - https://github.com/paragonie/sodium_compat
+- https://github.com/aldemeery/enum-polyfill
